@@ -1,101 +1,105 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-</head>
-<link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
-<style>
-    script{
-        border-style: solid;
+  </head>
+  <link
+    href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    script {
+      border-style: solid;
     }
     * {
-  box-sizing: border-box;
-}
-#container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
+      box-sizing: border-box;
+    }
+    #container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
 
-.question {
-  background-color: white;
-  padding: 30px;
-  box-shadow: 5px 5px 5px #666;
-  text-align: center;
-}
+    .question {
+      background-color: white;
+      padding: 30px;
+      box-shadow: 5px 5px 5px #666;
+      text-align: center;
+    }
 
-label {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 25px;
-}
+    label {
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      font-size: 25px;
+    }
 
-input {
-  display: block;
-  width: 100%;
-  margin-top: 15px;
-  text-align: center;
-  padding: 0 15px;
-  font-size: 25px;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  border-top-color: transparent;
-  border-bottom-color: #333;
-  font-family: Odibee Sans;
-}
+    input {
+      display: block;
+      width: 100%;
+      margin-top: 15px;
+      text-align: center;
+      padding: 0 15px;
+      font-size: 25px;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: #333;
+      font-family: Odibee Sans;
+    }
 
-button {
-  font-family: fantasy;
-  padding: 0 25px;
-  font-size: 25px;
-  margin-top: 15px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-</style>
-<body>
+    button {
+      font-family: fantasy;
+      padding: 0 25px;
+      font-size: 25px;
+      margin-top: 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+  <body>
     <h1>Benji's Guessing Game</h1>
     <script>
-        let num=Math.round( (Math.random() * 100));
+      let num = Math.round(Math.random() * 100);
 
-console.log(num);
+      console.log(num);
 
- function australia(userAnswer) {
-   userAnswer = Number(userAnswer)
-   if(userAnswer === num){
-      window.alert('Good job Benji! YOU WIN!!!');
-   } else {
-   if(num > userAnswer) {
-        window.alert('Benji, my number is bigger.');
-     } else {
-        windows.alert('Benji, my number is smaller.');
-     }
-    }
-  //    window.alert('Benji, my number is ' + ((num > userAnswer)?"bigger":"smaller") + '.');
-  }
-html
-
-
+      function australia(userAnswer) {
+        userAnswer = Number(userAnswer);
+        if (userAnswer === num) {
+          window.alert("Good job Benji! YOU WIN!!!");
+        } else {
+          if (num > userAnswer) {
+            window.alert("Benji, my number is bigger.");
+          } else {
+            windows.alert("Benji, my number is smaller.");
+          }
+        }
+        //    window.alert('Benji, my number is ' + ((num > userAnswer)?"bigger":"smaller") + '.');
+      }
     </script>
-    <img src="car.jpg" alt="lamborghini" width="2609" height="1262.5">
+    <img src="car.jpg" alt="lamborghini" width="2609" height="1262.5" />
     <div id="container">
-        <div class="question">
-          <form id="form" action="">
-            <label for="input">
-              <span id="text">I am thinking of a number from 1-100 what is it?</span>
-              <input id="input" placeholder="Answer" />
-            </label>
-            <button id="button" onclick="australia(input.value); return false;">Guess</button>
-          </form>
-        </div>
+      <div class="question">
+        <form id="form" action="">
+          <label for="input">
+            <span id="text"
+              >I am thinking of a number from 1-100 what is it?</span
+            >
+            <input id="input" placeholder="Answer" />
+          </label>
+          <button id="button" onclick="australia(input.value); return false;">
+            Guess
+          </button>
+        </form>
       </div>
-</body>
+    </div>
+  </body>
 </html>
+
