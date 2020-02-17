@@ -74,14 +74,19 @@
         userAnswer = Number(userAnswer);
         if (userAnswer === num) {
           window.alert("Good job Benji! YOU WIN!!!");
-        } else {
+        } /*else {
           if (num > userAnswer) {
             window.alert("Benji, my number is bigger.");
           } else {
             windows.alert("Benji, my number is smaller.");
           }
+        } */ else {
+          window.alert(
+            "Benji, my number is " +
+              (num > userAnswer ? "bigger" : "smaller") +
+              "."
+          );
         }
-        //    window.alert('Benji, my number is ' + ((num > userAnswer)?"bigger":"smaller") + '.');
       }
     </script>
     <img src="car.jpg" alt="lamborghini" width="2609" height="1262.5" />
@@ -102,4 +107,5 @@
     </div>
   </body>
 </html>
+
 
