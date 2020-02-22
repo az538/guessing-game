@@ -1,6 +1,6 @@
 let num=Math.round( (Math.random() * 100));
 let tries = 20;
-console.log(num);
+
 
  function australia(userAnswer) {
    userAnswer = Number(userAnswer)
@@ -32,12 +32,13 @@ console.log(num);
      } */
      
 
-     console.log(tries);
+
      if(tries === 0){
        window.alert("You lose. :(")
        stop();
      }else{     
-       tries = tries - 1;
+       tries = tries - 1;     
+      console.log(tries);
       window.alert('Benji, my number is ' + ((num > userAnswer)?"bigger":"smaller") + '.');
      }
     }
