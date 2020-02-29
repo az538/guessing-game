@@ -1,10 +1,21 @@
 let num=Math.round( (Math.random() * 100));
 let tries = 20;
+console.log(num);
 
-
- function australia(userAnswer) {
-   userAnswer = Number(userAnswer)
-   if(userAnswer === num){
+ function australia(userAnswer) {    
+ 
+   userAnswer = Number(userAnswer)   
+   if(tries === 0){
+       window.alert("You lose. :(")
+       stop();}
+       else{     
+  
+   if(userAnswer != num){
+      window.alert('Benji, my number is ' + ((num > userAnswer)?"bigger":"smaller") + '.');         
+      tries = tries - 1;  
+ 
+   } 
+else{   
       window.alert('Good job Benji! YOU WIN!!! Click OK to listen to star wars theme.');
      class sound {
        constructor(src) {
@@ -23,26 +34,11 @@ let tries = 20;
      }
      myMusic = new sound("Star Wars Theme  John Williams.mp3");
      myMusic.play();
-    
-   } else {
-   /*if(num > userAnswer) {
-        window.alert('Benji, my number is bigger.');
-     } else {
-        windows.alert('Benji, my number is smaller.');
-     } */
-     
-
-
-     if(tries === 0){
-       window.alert("You lose. :(")
-       stop();
-     }else{     
-       tries = tries - 1;     
-      console.log(tries);
-      window.alert('Benji, my number is ' + ((num > userAnswer)?"bigger":"smaller") + '.');
+ 
      }
     }
  
   }
+ 
 
 
